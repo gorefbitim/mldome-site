@@ -1,8 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLDome</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 50px;
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.8;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 14px 24px;
+        margin: 10px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+
+    .primary {
+        background: #00c6ff;
+        color: black;
+    }
+
+    .primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0,198,255,0.4);
+    }
+
+    .secondary {
+        border: 1px solid white;
+        color: white;
+    }
+
+    .secondary:hover {
+        background: white;
+        color: black;
+    }
+
+</style>
+</head>
 <body>
-    <h1>Welcome to MLDome</h1>
-    <p>Download our tool below:</p>
-    <a href="https://github.com/gorefbitim/YOUR_REPO/releases">Download Tool</a>
+
+<div class="container">
+    <h1>MLDome</h1>
+    <p>Modern Machine Learning tools — simple, fast, open source.</p>
+
+    <a class="btn primary" href="https://github.com/gorefbitim/mldome-site/releases" target="_blank">
+        Download Tool
+    </a>
+
+    <a class="btn secondary"
+       href="https://github.com/gorefbitim/mldome-site"
+       target="_blank">
+        ⭐ Star on GitHub
+    </a>
+</div>
+
 </body>
 </html>
